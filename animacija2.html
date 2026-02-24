@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Animacija 2 - Formular</title>
+    <style>
+       
+        @keyframes prikaz-inputa { 
+            0% {
+                width: 0px; 
+                height: 0px; 
+                background-color: #fff; 
+                border-radius: 20px; 
+            }
+            20% {
+                width: 20px; 
+                height: 20px; 
+                background-color: #f00; 
+                border-radius: 20px; 
+            }
+            30% {
+                width: 10px; 
+                height: 10px; 
+                background-color: #fff; 
+                border-radius: 10px; 
+            }
+            60% {
+                width: 150px; 
+                height: 30px; 
+                background-color: #fff; 
+                border-radius: 0px; 
+            }
+            80% {
+                width: 170px; 
+                height: 30px; 
+                background-color: #fff; 
+                border-radius: 10px; 
+            }
+            100% {
+                width: 220px; 
+                height: 30px; 
+                background-color: #fff; 
+                border-radius: 10px; 
+            }
+        }
+
+        .animirani-input { 
+            display: block; 
+            box-sizing: border-box; 
+            padding: 5px; 
+            margin-bottom: 15px;
+            border: 1px solid red; 
+            animation: prikaz-inputa 2s forwards; 
+        }
+
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Ime:</p>
+    <input type="text" class="animirani-input"> 
+
+    <p>Prezime:</p>
+    <input type="text" class="animirani-input"> 
+
+    <p>Država:</p>
+    <input type="text" class="animirani-input">
+
+</body>
+</html>
